@@ -12,12 +12,6 @@ const createJWT = (res, userId) => {
     maxAge: 1 * 24 * 60 * 60 * 1000, // 1 days
   });
 
-  // Send a response to the client
-  res.status(200).json({
-    success: true,
-    message: "Authentication successful",
-    token: token, // Optional: Include the token in the response body
-  });
 };
 
 export default createJWT;
